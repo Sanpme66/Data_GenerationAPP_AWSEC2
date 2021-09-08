@@ -119,10 +119,10 @@ def main():
 		st.dataframe(df)
 
 		# View as JSON
-		with st.beta_expander("🔍: View JSON "):
+		with st.expander("🔍: View JSON "):
 			st.json(data)
 
-		with st.beta_expander("📩: Download"):
+		with st.expander("📩: Download"):
 			make_downloadable_df_format(df,dataformat)
 		
 
